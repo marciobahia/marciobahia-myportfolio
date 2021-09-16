@@ -9,6 +9,7 @@
     position: fixed;
     top: 0;
     z-index: 2;
+    transition: all 1s ease;
 
     .wrapper{
         padding: 10px 30px;
@@ -62,10 +63,10 @@
 
             }
           }   
-        }
+        } 
     }
     &.active{
-        background-color: black;
+        background-color: $mainColor;
         color: white;
 
         .hamburger{
@@ -80,6 +81,7 @@
                 &:last-child{
                     background-color: white;
                     transform: rotate(-45deg);
+    
                 }
             }
         }         
